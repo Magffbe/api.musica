@@ -1,4 +1,3 @@
-const pgPromise = require('pg-promise');
 
 const pgp = require('pg-promise')();
 
@@ -14,7 +13,7 @@ const db = pgp(conectionString);
 db.connect()
     .then(
         ()=>{
-            console,log("Conexion Exitosa");
+            console.log("Conexion Exitosa");
             
 
         })
