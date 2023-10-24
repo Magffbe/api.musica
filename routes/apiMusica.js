@@ -1,6 +1,6 @@
 const express = require ('express');
 const apiMusica = express();
-const db = require ('../database/conn');
+const db = require ('../database/conn.js');
 
 apiMusica.get('', async (req, res)=>{
 

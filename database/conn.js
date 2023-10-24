@@ -1,3 +1,5 @@
+const pgPromise = require('pg-promise');
+
 const pgp = require('pg-promise')();
 
 const user = 'postgres';
@@ -13,6 +15,7 @@ db.connect()
     .then(
         ()=>{
             console,log("Conexion Exitosa");
+            
 
         })
         .catch( (err)=>{
@@ -21,5 +24,5 @@ db.connect()
         })
         
 
-        module.exports = db;
+            module.exports = db;
     

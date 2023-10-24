@@ -10,6 +10,21 @@ create table tbl_api_musica
     
     );
 
-    select * from tbl_api_musica;
+    CREATE TABLE tbl_artistas (
+    id serial PRIMARY KEY,
+    nombre VARCHAR(100),
+    artista_id INT
+);
+
+CREATE TABLE tbl_albumes (
+    id serial PRIMARY KEY,
+    nombre VARCHAR(100),
+    artista_id INT, 
+    FOREIGN KEY (artista_id) REFERENCES tbl_artistas(id)
+);
+
+    
+        
+    
     
 
